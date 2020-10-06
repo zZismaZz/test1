@@ -50,6 +50,22 @@ namespace Ejemplo2
 
             Min3 = Utils.GetMinValue(8, 5);
 
+            double Max1, Max2, Max3;
+            Max1 = Utils.GetMaxValue(15, 2);
+
+            Max2 = Utils.GetMaxValue(5, 65);
+
+            Max3 = Utils.GetMaxValue(560, 786);
+
+            bool Even1, Even2, Even3;
+            Even1 = Utils.IsEven(58);
+
+            Even2 = Utils.IsEven(97);
+
+            Even3 = Utils.IsEven(781);
+
+
+
         }
     }
 }
