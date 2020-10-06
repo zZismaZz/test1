@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTest1;
+using System;
 
 namespace Ejemplo2
 {
@@ -63,6 +64,14 @@ namespace Ejemplo2
             Even2 = Utils.IsEven(97);
 
             Even3 = Utils.IsEven(781);
+
+            //Ejercicio Contador del 0 al 99
+
+            Ejercicios.Ejercicio1();
+
+            //Ejercicio Contador Numeros pares
+
+            Ejercicios.Ejercicio2(20);
 
 
 

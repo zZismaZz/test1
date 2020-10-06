@@ -36,8 +36,6 @@ namespace Ejemplo2
                 return true;
             else
                 return false;
-            
-
         }
         
 
