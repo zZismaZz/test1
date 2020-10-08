@@ -73,6 +73,8 @@ namespace Ejemplo2
 
             Ejercicios.Ejercicio2(20);
 
+            Ejercicios.Ejercicio3(10);
+
 
 
         }
