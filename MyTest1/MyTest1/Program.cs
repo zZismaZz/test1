@@ -75,6 +75,11 @@ namespace Ejemplo2
 
             Ejercicios.Ejercicio3(10);
 
+            //Ejercicio Serie Fabonnacci
+
+            Ejercicios.SerieFibonacci();
+
+
 
 
         }

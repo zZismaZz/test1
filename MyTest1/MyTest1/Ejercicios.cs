@@ -36,9 +36,32 @@ namespace MyTest1
         {
             bool es_primo = Utils.IsPrime(numero);
             if (es_primo)
-                System.Console.WriteLine("El numero" + numero + "es primo");
+                System.Console.WriteLine("El numero " + numero + " es primo");
             else
-                System.Console.WriteLine("El numero" + numero + "NO es primo");
+                System.Console.WriteLine("El numero " + numero + " NO es primo");
+        }
+
+        //Ejercicio: Hacer una función que imprima la serie Fibonacci.
+
+        public static void SerieFibonacci()
+        {
+
+            int i = 0;
+            int a = 1;
+            int aa = 0;
+
+            Console.WriteLine(aa);
+            Console.WriteLine(a);
+            
+            while(i < 100)
+            {
+                System.Console.WriteLine(a + aa);
+                    int aux = aa;
+                    aa = a;
+                    a = aux + a;
+                i++;
+            }
+
         }
     }
 }
