@@ -63,5 +63,17 @@ namespace MyTest1
             }
 
         }
+
+        public static void ImprimirAscii()
+        {
+            for (int i = 33; i <= 255; i++)
+            {
+                System.Console.Write(i);
+                System.Console.Write(") es el caracter [");
+                System.Console.Write((char)i);
+                System.Console.WriteLine("]");
+            }
+
+        }
     }
 }

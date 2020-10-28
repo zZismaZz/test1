@@ -8,6 +8,7 @@ namespace Ejemplo2
 
         static void Main(string[] args)
         {
+            
             double solution, solution1, solution2, solution3;
             solution = EquationSolvers.SolveEquation2(1.0, -2.0, 3.0);
             Console.WriteLine("Hello World!");
@@ -79,7 +80,22 @@ namespace Ejemplo2
 
             Ejercicios.SerieFibonacci();
 
+            //Ejercicio tabla Ascii
 
+            Ejercicios.ImprimirAscii();
+
+            EjerciciosExamen.HacerSuma(523, 7);
+            EjerciciosExamen.HacerSuma(100, 20);
+            EjerciciosExamen.HacerSuma(25, 25);
+
+            double result = EjerciciosExamen.HacerResta(3, 2);
+            System.Console.WriteLine(result);
+            double result1 = EjerciciosExamen.HacerResta(10, 8);
+            System.Console.WriteLine(result1);
+            double result2 = EjerciciosExamen.HacerResta(250, 230);
+            System.Console.WriteLine(result2);
+            double result3 = EjerciciosExamen.HacerResta(10, 210);
+            System.Console.WriteLine(result3);
 
 
         }
