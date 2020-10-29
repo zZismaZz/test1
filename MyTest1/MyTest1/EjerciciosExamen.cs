@@ -18,5 +18,28 @@
         }
 
         //Hacer dos funciones que reciba dos reales, una devuelva el mayor de los dos reales y la otra el menor.
+        public static double ObtenerValorMaximo(double a, double b)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }                                       
+        }
+
+        public static double ObtenerValorMinimo(double a, double b)
+        {
+            if (a < b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
     }
 }

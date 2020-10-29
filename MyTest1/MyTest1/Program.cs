@@ -97,6 +97,16 @@ namespace Ejemplo2
             double result3 = EjerciciosExamen.HacerResta(10, 210);
             System.Console.WriteLine(result3);
 
+            double max = EjerciciosExamen.ObtenerValorMaximo(6, 8);
+            System.Console.WriteLine(max);
+            double max1 = EjerciciosExamen.ObtenerValorMaximo(15, 12);
+            System.Console.WriteLine(max1);
+            double max2 = EjerciciosExamen.ObtenerValorMaximo(2510, -12);
+            System.Console.WriteLine(max2);
+            double min = EjerciciosExamen.ObtenerValorMinimo(1, -1);
+            System.Console.WriteLine(min);
+            double min2 = EjerciciosExamen.ObtenerValorMinimo(250, 145);
+            System.Console.WriteLine(min2);
 
         }
     }
