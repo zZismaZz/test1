@@ -108,6 +108,20 @@ namespace Ejemplo2
             double min2 = EjerciciosExamen.ObtenerValorMinimo(250, 145);
             System.Console.WriteLine(min2);
 
+            EjerciciosExamen.EjercicioExamen5(25, 2);
+            EjerciciosExamen.EjercicioExamen5(150, 45);
+            EjerciciosExamen.EjercicioExamen5(25, 26);
+            EjerciciosExamen.EjercicioExamen5(75, 200);
+            EjerciciosExamen.EjercicioExamen5(25, 25);
+            EjerciciosExamen.EjercicioExamen5(-1, -1);
+
+            EjerciciosExamen.PrintErrorCode(2);
+            EjerciciosExamen.PrintErrorCode(0);
+            EjerciciosExamen.PrintErrorCode(3);
+            EjerciciosExamen.PrintErrorCode(1);
+
+            EjerciciosExamen.MakeSerie(10);
+
         }
     }
 }
