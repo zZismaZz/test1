@@ -8,8 +8,8 @@ namespace Ejemplo2
 
         static void Main(string[] args)
         {
-            
-            double solution, solution1, solution2, solution3;
+
+            /*double solution, solution1, solution2, solution3;
             solution = EquationSolvers.SolveEquation2(1.0, -2.0, 3.0);
             Console.WriteLine("Hello World!");
 
@@ -121,7 +121,21 @@ namespace Ejemplo2
             EjerciciosExamen.PrintErrorCode(1);
 
             EjerciciosExamen.MakeSerie(10);
+            
 
+            EjerciciosExamen.AsteriscoSuma(10);
+            EjerciciosExamen.AsteriscoSuma(5);
+            
+
+            EjerciciosExamen.AsteriSumaRestaDivision(25);
+            */
+
+            EjerciciosExamen.FigurasAsteriSuma(2);
+            System.Console.WriteLine();
+            EjerciciosExamen.FigurasAsteriSuma(6);
+            System.Console.WriteLine();
+            EjerciciosExamen.FigurasAsteriSuma(10);
+            System.Console.WriteLine();
         }
     }
 }

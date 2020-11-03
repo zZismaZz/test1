@@ -1,4 +1,6 @@
-﻿namespace MyTest1
+﻿using Ejemplo2;
+
+namespace MyTest1
 {
     class EjerciciosExamen
     {
@@ -18,7 +20,7 @@
         }
 
         //Hacer dos funciones que reciba dos reales, una devuelva el mayor de los dos reales y la otra el menor.
-        public static double ObtenerValorMaximo(double a, double b)
+        public static int ObtenerValorMaximo(int a, int b)
         {
             if (a > b)
             {
@@ -136,7 +138,105 @@
             
         }
         //Hacer una función que reciba un número entero e imprima todos los números desde el 0 hasta ese número
+
+        public static void PrintSerie(int n)
+        {
+            for(int i = 0; i <= n; i++)
+            {
+                System.Console.Write(i + ",");
+            }
+        }
+        //Hacer una función igual que la  anterior pero quitando la coma del final.
+
+        public static void PrintSerie2(int n)
+        {
+            for(int i = 0; i <= n; i++)
+            {
+               
+                System.Console.Write(i);
+                if (i < n)
+                    System.Console.Write(",");
+            }
+        }
+        //Hacer una función que devuelva el mayor de seis enteros, la función debe ocupar una línea.
+
+        public static int GetMaxNumOf6(int n1, int n2, int n3, int n4, int n5, int n6)
+        {
+            return GetMaxValue3Number(ObtenerValorMaximo(n1, n2), ObtenerValorMaximo(n3, n4), ObtenerValorMaximo(n5, n6));
+        }
+        //Función que imprima asteriscos segun el numero entero que le pases
+        public static void Asteriscos(int n)
+        {
+            for(int i = 0; i <= n; i++)
+            {                
+              System.Console.Write("*");
+            }
+        }
+        //Función que imprima * y + segun el numero entero que le pases
+
+        public static void AsteriscoSuma(int n)
+        {
+            for(int i = 0; i < n; i++)
+            {
+                if (Utils.IsEven(i))
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+            }
+        }
+
+        //Función que imprima *, +, - segun el numero entero que le pases
+        public static void AsteriSumaRestaDivision(int n)
+        {
+            for(int i = 0; i < n; i++)
+            {
+                switch(i % 4)
+                {
+                    case 0:
+                        System.Console.Write("*");
+                        break;
+                    case 1:
+                        System.Console.Write("+");
+                        break;
+                    case 2:
+                        System.Console.Write("-");
+                        break;
+                    case 3:
+                        System.Console.Write("/");
+                        break;
+                }
+            }
+        }
+        //Función que imprima figuras con * segun el numero entero que le pases
+
+        public static void FiguraAsterisco(int n)
+        {
+            for(int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+        //Función que imprima ***+++*** segun el numero entero que le pases
+
+        public static void FigurasAsteriSuma(int n)
+        {
+            for(int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                    if((i % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                System.Console.WriteLine();
+            }
+        }
+
     }
+
+
+
 
 
 }
