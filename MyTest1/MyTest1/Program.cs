@@ -130,12 +130,13 @@ namespace Ejemplo2
             EjerciciosExamen.AsteriSumaRestaDivision(25);
             */
 
-            EjerciciosExamen.FigurasAsteriSuma(2);
+            EjerciciosExamen.InverEscaleraAster(2);
             System.Console.WriteLine();
-            EjerciciosExamen.FigurasAsteriSuma(6);
+            EjerciciosExamen.InverEscaleraAster(6);
             System.Console.WriteLine();
-            EjerciciosExamen.FigurasAsteriSuma(10);
+            EjerciciosExamen.InverEscaleraAster(10);
             System.Console.WriteLine();
+            
         }
     }
 }

@@ -233,6 +233,53 @@ namespace MyTest1
             }
         }
 
+        public static void FigAstSumaDiagonal(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                for(int c = 0; c < n; c++)
+                {
+                    int s = f + c;
+                    if ((s % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                    System.Console.WriteLine();
+                }
+            }
+        }
+
+        public static void EscaleraAster(int n)
+        {
+            for(int c = 0; c < n; c++)
+            {
+                for(int f = 0; f <= c; f++)
+                {
+                    System.Console.Write("*");
+                   
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void InverEscaleraAster(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nespacios = n - f - 1;
+                int nasteriscos = f + 1;
+                for(int c = 0; c < nespacios; c++)
+                {
+                    System.Console.Write(" ");
+                }               
+                for(int c = 0; c < nasteriscos; c++)
+                {
+                    System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+
+        }
     }
 
 
