@@ -299,6 +299,77 @@ namespace MyTest1
                 System.Console.WriteLine();
             }
         }
+
+        public static void InvertAstPiramide(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                int nespacios1 = f;
+                int nespacios2 = (n - f - 1) * 2;
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");               
+                System.Console.Write("*");
+                System.Console.WriteLine(); 
+
+            }
+        }
+
+        public static void AstPiramide(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nespacios1 = n - f - 1;
+                int nespacios2 = f * 2;
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void Rombo(int n)
+        {
+            AstPiramide(n);
+            InvertAstPiramide(n);      
+        }
+
+        public static void EEUUflag()
+        {
+            for(int f = 0; f < 10; f++)
+            {               
+                for (int c = 0; c < 30; c++)
+                {
+                    int f2 = f / 2;
+                    if (0 <= c && c <= 5 && 0 <= f && f <= 2)
+                    {
+                        int flag = c + f;
+                        if (Utils.IsEven(flag))
+                            System.Console.Write("+");
+                        else
+                            System.Console.Write(" ");
+                    }
+                    else if (Utils.IsEven(f2))
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write(" ");
+                    
+                }
+                System.Console.WriteLine();
+            }
+            
+        }
+
+
+
+
+
+
     }
 
 

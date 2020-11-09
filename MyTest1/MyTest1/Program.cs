@@ -128,15 +128,29 @@ namespace Ejemplo2
             
 
             EjerciciosExamen.AsteriSumaRestaDivision(25);
-            */
+            
 
-            EjerciciosExamen.InverEscaleraAster(2);
+            EjerciciosExamen.InvertAstPiramide(2);
             System.Console.WriteLine();
-            EjerciciosExamen.InverEscaleraAster(6);
+            EjerciciosExamen.AstPiramide(10);
             System.Console.WriteLine();
-            EjerciciosExamen.InverEscaleraAster(10);
+            EjerciciosExamen.Rombo(10);
             System.Console.WriteLine();
             
+            
+            while (true)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    EjerciciosExamen.Rombo(i);
+                    System.Threading.Thread.Sleep(200);
+                    System.Console.Clear();
+                }
+            }
+            */
+
+            EjerciciosExamen.EEUUflag();
+
         }
     }
 }
