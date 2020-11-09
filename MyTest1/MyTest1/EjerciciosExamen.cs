@@ -280,6 +280,25 @@ namespace MyTest1
             }
 
         }
+
+        public static void Piramide(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                int nespacio1 = n - f - 1;
+                int nespacio2 = f * 2;
+                for (int c = 0; c < nespacio1; c++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("*");
+                for( int c = 0; c < nespacio2; c++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
     }
 
 
