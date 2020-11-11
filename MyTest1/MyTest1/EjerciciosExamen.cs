@@ -1,4 +1,6 @@
 ﻿using Ejemplo2;
+using System;
+using System.Runtime.InteropServices;
 
 namespace MyTest1
 {
@@ -365,7 +367,31 @@ namespace MyTest1
             
         }
 
+        // Hacer una función que devuelva el Sumatorio de un número
 
+        public static int Sumatorio(int n)
+        {
+            int result = 0;
+            for(int i = 1; i <= n; i++)
+            
+                result += i;
+            
+            return result;
+   
+
+        }
+
+        //Haz una función que devuelva 2 elevado a un nº
+
+        public static int NumeroPotencia(int n)
+        {
+            int result = 1;
+            for(int i = 0; i < n; i++)
+            {
+                result *=2;                
+            }
+            return result; 
+        }
 
 
 
