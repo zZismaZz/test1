@@ -45,6 +45,14 @@ namespace MyTest1
                 return b;
             }
         }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
         //Hacer una función que se le paseen tres enteros y que devuelva el mayor de los 3
         public static int GetMaxValue3Number(int a, int b, int c)
         {
